@@ -58,6 +58,12 @@ public class JeecgFormDemoController extends BaseController {
 	public ModelAndView formValidDemo2(HttpServletRequest request) {
 		return new ModelAndView("com/jeecg/demo/form_valid");
 	}
+	
+	//添加一个新的方法
+	@RequestMapping(params = "formValidDemo1")
+	public ModelAndView formValidDemo1(HttpServletRequest request) {
+		return new ModelAndView("com/jeecg/demo/form_valid");
+	}
 
 	@RequestMapping(params = "testsubmit=1",method ={RequestMethod.GET, RequestMethod.POST})
 	public ModelAndView testsubmit(HttpServletRequest request) {
