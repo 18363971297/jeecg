@@ -66,7 +66,7 @@ public class JeecgFormDemoController extends BaseController {
 	}
 
 	@RequestMapping(params = "testsubmit=1",method ={RequestMethod.GET, RequestMethod.POST})
-	public ModelAndView testsubmit(HttpServletRequest request) {
+	public ModelAndView testsubmit1(HttpServletRequest request) {
 		logger.info("请求成功byebye");
 		return new ModelAndView("com/jeecg/demo/form_valid");
 	}
