@@ -61,7 +61,7 @@ public class JeecgFormDemoController extends BaseController {
 	
 	//添加一个新的方法
 	@RequestMapping(params = "formValidDemo1")
-	public ModelAndView formValidDemo3(HttpServletRequest request) {
+	public ModelAndView formValidDemo32(HttpServletRequest request) {
 		return new ModelAndView("com/jeecg/demo/form_valid");
 	}
 
