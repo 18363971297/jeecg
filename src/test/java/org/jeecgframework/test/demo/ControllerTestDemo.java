@@ -26,7 +26,8 @@ public class ControllerTestDemo  extends AbstractUnitTest{
 	private MockHttpSession session; //为模拟登录时，所有请求使用同一个session
 	@Before
 	public void setup() throws Exception {
-		MockHttpServletRequestBuilder requestBuilder = post("/");//添加备注
+		MockHttpServletRequestBuilder requestBuilder = post("/");//添加备注、修图该
+		//该备注是说明问题的
 		MockHttpServletRequest request = requestBuilder.buildRequest(this.wac.getServletContext());
 		session = (MockHttpSession) request.getSession();
 		this.mockMvc = webAppContextSetup(this.wac).alwaysExpect(status().isOk()).build();
