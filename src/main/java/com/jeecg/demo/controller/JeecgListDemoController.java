@@ -79,7 +79,13 @@ public class JeecgListDemoController extends BaseController {
 	 */
 	//JeecgListDemoController.do?minidaoListDemo
 	@RequestMapping(params = "minidaoListDemo")
-	public ModelAndView minidaoListDemo(HttpServletRequest request) {
+	public ModelAndView minidaoListDemo1(HttpServletRequest request) {
+		return new ModelAndView("com/jeecg/demo/taglist_minidao");
+	}
+	
+	
+	@RequestMapping(params = "minidaoListDemo")
+	public ModelAndView minidaoListDemo12(HttpServletRequest request) {
 		return new ModelAndView("com/jeecg/demo/taglist_minidao");
 	}
 	
